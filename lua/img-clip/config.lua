@@ -46,6 +46,11 @@ local defaults = {
 
   -- filetype specific options
   filetypes = {
+    neorg = {
+      url_encode_path = true,
+      template = ".image [$CURSOR][$FILE_PATH]",
+      download_images = false,
+    },
     markdown = {
       url_encode_path = true, ---@type boolean
       template = "![$CURSOR]($FILE_PATH)", ---@type string
